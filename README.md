@@ -1,2 +1,2 @@
-# effechecka-selector
-biodiversity selectors and uuids used by effechecka and freshdata
+# org.effechecka-selector
+biodiversity selectors and uuids used by org.effechecka and freshdata

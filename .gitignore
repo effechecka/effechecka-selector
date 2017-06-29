@@ -1,2 +1,11 @@
-*.class
-*.log
+.idea/
+assets/*.swp
+.DS_Store
+project/target
+target/
+/bin/
+.cache-main
+.cache-tests
+.classpath
+.project
+.settings/
