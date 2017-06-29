@@ -31,4 +31,8 @@ class UuidUtilsSpec extends WordSpecLike with Matchers {
     occurrenceUUID should be(UUID.fromString("baa722b5-7b86-5d11-82f8-e516c86156c9"))
   }
 
+  "path for selector org.effechecka occurrence guid" in {
+    UuidUtils.pathForSelector(OccurrenceSelector("Aves|Mammalia")) shouldBe "occurrencesForMonitor/88/d7/e9/88d7e954-75f7-5c66-9ed2-ca625776e1ef"
+  }
+
 }
