@@ -54,16 +54,14 @@ object UuidUtils {
   }
 
   def pathForSelector(occurrenceSelector: OccurrenceSelector): String = {
-    val suffix: String = pathForUUID(UuidUtils.uuidFor(occurrenceSelector))
-    val prefix = "occurrencesForMonitor"
-    s"$prefix/$suffix"
+    pathForUUID(UuidUtils.uuidFor(occurrenceSelector))
   }
 
-  def pathForUUID(uuid: UUID) = {
+  def pathForUUID(uuid: UUID): String = {
     val f0 = uuid.toString.substring(0, 2)
     val f1 = uuid.toString.substring(2, 4)
     val f2 = uuid.toString.substring(4, 6)
-    s"$f0/$f1/$f2/$uuid"
+    s"u0=$f0/u1=$f1/u2=$f2/uuid=$uuid"
   }
 
 

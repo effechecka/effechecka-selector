@@ -17,7 +17,7 @@ class UuidUtilsSpec extends WordSpecLike with Matchers {
   }
 
   "org.effechecka selector guid" in {
-    val selector = OccurrenceSelector("Animalia|Insecta", "ENVELOPE(-150,-50,40,10)", "")
+    val selector = OccurrenceSelector("Animalia|Insecta", "ENVELOPE(-150,-50,40,10)")
     val expectedUUID: String = "55e4b0a0-bcd9-566f-99bc-357439011d85"
 
     UuidUtils.uuidFor(selector) should be(UUID.fromString(expectedUUID))
@@ -32,7 +32,7 @@ class UuidUtilsSpec extends WordSpecLike with Matchers {
   }
 
   "path for selector org.effechecka occurrence guid" in {
-    UuidUtils.pathForSelector(OccurrenceSelector("Aves|Mammalia")) shouldBe "occurrencesForMonitor/88/d7/e9/88d7e954-75f7-5c66-9ed2-ca625776e1ef"
+    UuidUtils.pathForSelector(OccurrenceSelector("Aves|Mammalia")) shouldBe "u0=88/u1=d7/u2=e9/uuid=88d7e954-75f7-5c66-9ed2-ca625776e1ef"
   }
 
 }

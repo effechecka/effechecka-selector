@@ -12,7 +12,7 @@ trait SelectorValidator {
     }
 
     def invalid(selector: OccurrenceSelector): Boolean = {
-      !valid(selector);
+      !valid(selector)
     }
 
     def validWktString(occurrence: OccurrenceSelector): Boolean = {
