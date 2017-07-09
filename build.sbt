@@ -1,7 +1,7 @@
 organization := "org.effechecka"
 name := "effechecka-selector"
 
-version := "0.0.2-SNAPSHOT"
+version := "0.0.3"
 
 scalaVersion := "2.11.8"
 
@@ -19,5 +19,5 @@ libraryDependencies ++= {
 }
 
 publishMavenStyle := true
-publishTo := Some("Effechecka Snapshots" at "s3://effechecka.s3-us-east-1.amazonaws.com/snapshots")
+publishTo := Some("Effechecka Releases" at "s3://effechecka.s3-us-east-1.amazonaws.com/releases")
 
