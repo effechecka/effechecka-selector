@@ -14,4 +14,4 @@ val expectedUUID: String = "55e4b0a0-bcd9-566f-99bc-357439011d85"
 UuidUtils.uuidFor(selector) should be(UUID.fromString(expectedUUID))
 ```
 
-For more example usage, see the [test cases](../../tree/master/src/test/scala/org/effechecka/selector), https://github.com/jhpoelen/effechecka or https://github.com/bio-guoda/idigbio-spark .
+For more example usage, see the [test cases](../../tree/master/src/test/scala/org/effechecka/selector), https://github.com/gimmefreshdata/freshdata/wiki/api, https://github.com/jhpoelen/effechecka or https://github.com/bio-guoda/idigbio-spark .
